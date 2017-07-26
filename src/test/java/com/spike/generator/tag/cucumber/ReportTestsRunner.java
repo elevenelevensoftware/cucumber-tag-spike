@@ -8,6 +8,4 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = {"src/test/java/features"}
 )
-public class ReportTestsRunner {
-
-}
+public class ReportTestsRunner { }

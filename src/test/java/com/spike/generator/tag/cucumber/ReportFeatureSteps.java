@@ -4,18 +4,24 @@ import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 public class ReportFeatureSteps {
 
+    WebDriver webDriver = null;
+
     @Given("^I open a browser$")
     public void i_open_a_browser() throws Throwable {
-        // Write code here that turns the phrase above into concrete actions
-        throw new PendingException();
+        webDriver = new FirefoxDriver();
     }
 
     @When("^I navigate to ElevenEleven Softwares github page$")
     public void i_navigate_to_ElevenEleven_Softwares_github_page() throws Throwable {
         // Write code here that turns the phrase above into concrete actions
+
         throw new PendingException();
     }
 
